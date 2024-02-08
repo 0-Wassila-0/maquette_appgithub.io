@@ -36,5 +36,3 @@ app1Btn.addEventListener("click",openModal);
 app4Btn[0].addEventListener("click",openModal);
 app4Btn[1].addEventListener("click",openModal);
 close.addEventListener("click",closeModal);
-
-
