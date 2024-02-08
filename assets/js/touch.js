@@ -1,9 +1,11 @@
 var touch = document.getElementById("touch");
-
+var debug = document.getElementById("debug");
 var hammertime = new Hammer(document.body, {});
 var ofLeft = touch.offsetLeft;
 var ofTop = touch.offsetTop;
 
+hammertime.get('pinchin').set({ enable: true });
+hammertime.get('pinchout').set({ enable: true });
 hammertime.on('pan pinch', function (event) {
     console.dir(touch.offsetLeft);
     touch.offsetLeft = ofLeft;
